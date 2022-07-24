@@ -27,13 +27,32 @@
     a:hover {color:var(--c-orange);}
 </style>
 <style>
+    b:hover {color: var(--c-blue);}
+</style>
+<style>
     ul {
         list-style-type: none;  
+    }
+</style> 
+<style>
+.box {
+    display: flex;
+    flex-direction: row;
+}
+</style>
+<style>
+    h2{
+        padding-top: 50px;
+    }
+</style>
+<style>
+    h3{
+        padding-top: 50px;
     }
 </style>
   </head>
 
-  <body style="background-color:var(--c-background-color);">
+  <body style="background-color:var(--c-background-color); max-width:800px;">
     <!-- Here is our main header that is used across all the pages of our website -->
 
     <header style="background-color:var(--c-background-highlights);font-size: 150%;">
@@ -41,7 +60,8 @@
     </header>
 
     <nav>
-      <ul>
+
+      <ul style="text-align:center" class="box">
         <li style="color:var(--c-magenta)"><a href="https://www.imdb.com/title/tt2224026/">Home</a></li>
         <li style="color:var(--c-magenta)"><a href="https://www.microsoft.com/en-ww/microsoft-teams/log-in">Our team</a></li>
         <li style="color:var(--c-magenta)"><a href="https://10play.com.au/theproject">Projects</a></li>
@@ -60,7 +80,7 @@
     <main style="color:var(--base-font-color)">
 
       <!-- It contains an article -->
-      <article style="border:var(--c-cyan); border: width 3px; border-style:solid;">
+      <article style="border:var(--c-cyan); border: width 3px; border-style:solid; text-align:left;">
         <h2>Article heading</h2>
 
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Donec a diam lectus. Set sit amet ipsum mauris. Maecenas congue ligula as quam viverra nec consectetur ant hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur.</p>
@@ -79,15 +99,15 @@
       </article>
 
       <!-- the aside content can also be nested within the main content -->
-      <aside>
+      <aside style="color:var(--c-green); text-align: right;">
         <h2>Related</h2>
 
-        <ul>
-          <li><a href="#">Oh I do like to be beside the seaside</a></li>
-          <li><a href="#">Oh I do like to be beside the sea</a></li>
-          <li><a href="#">Although in the North of England</a></li>
-          <li><a href="#">It never stops raining</a></li>
-          <li><a href="#">Oh well...</a></li>
+        <ul style="color:var(--c-red);">
+          <li><b href="#">Oh I do like to be beside the seaside</b></li>
+          <li><b href="#">Oh I do like to be beside the sea</b></li>
+          <li><b href="#">Although in the North of England</b></li>
+          <li><b href="#">It never stops raining</b></li>
+          <li><b href="#">Oh well...</b></li>
         </ul>
       </aside>
 
